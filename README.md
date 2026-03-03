@@ -1,73 +1,105 @@
-# personal-finance-dashoard
 
-This template should help get you started developing with Vue 3 in Vite.
+# Dashboard de Finanças Pessoais - Desafio Fullstack Pleno 🚀
 
-## Recommended IDE Setup
+> **⚠️ Nota de Esclarecimento:** > Este projeto não é um teste técnico real de uma empresa específica. O escopo abaixo foi gerado em parceria com a IA do Google (Gemini) com o objetivo de simular um teste técnico real para a vaga de **Desenvolvedor Fullstack Pleno**. 
+> Minha intenção com este repositório é aprimorar meus conhecimentos nas tecnologias requisitadas (Vue.js 3 e Symfony), colocar em prática padrões de arquitetura e construir um portfólio sólido que reflita o que o mercado exige atualmente.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🙋🏽‍♂️ Sobre Mim
 
-## Type Support for `.vue` Imports in TS
+Olá! Meu nome é **Amanda Pereira** e sou uma desenvolvedora apaixonada por criar soluções eficientes e escaláveis. Atualmente, meu foco de estudo e atuação está no ecossistema PHP no backend e frameworks reativos como Vue.js no frontend.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Criei este projeto para me desafiar, sair da zona de conforto e demonstrar minhas habilidades na construção de uma aplicação de ponta a ponta, incluindo testes, documentação de API e conteinerização.
 
-## Customize configuration
+* 💼 **LinkedIn:** (https://www.linkedin.com/in/amanda-pereira-dev/)
+* 📧 **E-mail:** amandapereiradevcontact@gmail.com
+* 💻 **Portfólio:** (https://pereiradev.vercel.app)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+# O Desafio Técnico: Desenvolvedor Fullstack Pleno 🚀
 
-```sh
-npm install
-```
+Olá! Ficamos muito felizes com o seu interesse em fazer parte do nosso time. 
 
-### Compile and Hot-Reload for Development
+Este teste técnico tem como objetivo avaliar suas habilidades práticas, organização, tomada de decisão e familiaridade com a nossa stack principal (Vue.js 3 e Symfony). Não buscamos apenas um código que funcione, mas sim um código limpo, manutenível, bem testado e documentado.
 
-```sh
-npm run dev
-```
+## 🎯 O Desafio: Dashboard de Finanças Pessoais
 
-### Type-Check, Compile and Minify for Production
+Você deverá desenvolver uma aplicação web de **Finanças Pessoais**. A aplicação deve permitir que o usuário gerencie suas receitas e despesas, e visualize um resumo de sua saúde financeira.
 
-```sh
-npm run build
-```
+**Atenção à Arquitetura:** O projeto deve obrigatoriamente ter o **Backend (API REST)** e o **Frontend (SPA)** separados em diretórios distintos (ex: `/api` e `/web`), ou até mesmo em repositórios separados (se preferir, use um monorepo para facilitar o envio).
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### 🛠️ Stack Tecnológica Exigida
 
-```sh
-npm run test:unit
-```
+* **Backend:** PHP 8.x, Symfony (versão 6 ou 7)
+* **Banco de Dados:** MySQL 8.x
+* **Frontend:** Vue.js 3 (utilizando Composition API e `<script setup>`), Vite
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+### ✨ Tecnologias Modernas e Práticas Recomendadas (Diferenciais Esperados para Pleno)
 
-```sh
-# Install browsers for the first run
-npx playwright install
+Para atingir o melhor nível e demonstrar sua senioridade, esperamos ver (ou encorajamos fortemente) o uso de:
 
-# When testing on CI, must build the project first
-npm run build
+* **Ambiente de Desenvolvimento:** Docker e Docker Compose (queremos rodar seu projeto com um único comando `docker-compose up`).
+* **Gerenciamento de Estado (Front):** Pinia.
+* **Estilização (Front):** Tailwind CSS ou um framework de UI moderno (ex: Vuetify, Quasar).
+* **Qualidade e Testes:** PHPUnit para o backend e Vitest/Jest para o frontend.
+* **Autenticação:** JWT (JSON Web Token).
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+---
 
-### Lint with [ESLint](https://eslint.org/)
+## 📋 Escopo do Projeto
 
-```sh
-npm run lint
-```
+A aplicação deve conter as seguintes funcionalidades mínimas:
+
+1.  **Autenticação:**
+    * Cadastro de novo usuário.
+    * Login/Logout.
+2.  **Gestão de Transações:**
+    * CRUD (Criar, Ler, Atualizar, Deletar) de transações financeiras.
+    * Cada transação deve ter: Título, Valor, Tipo (Receita ou Despesa), Data e Categoria (ex: Alimentação, Lazer, Salário).
+3.  **Dashboard Resumo:**
+    * Visualização do Saldo Total.
+    * Total de Receitas no mês atual.
+    * Total de Despesas no mês atual.
+    * *Bônus:* Um gráfico simples mostrando as despesas por categoria.
+
+---
+
+## 📖 Como a API deve ser documentada?
+
+Para nós, um bom desenvolvedor pleno sabe que uma API sem documentação é uma API incompleta. 
+
+Sua API deve ser documentada utilizando o padrão **OpenAPI (Swagger)**. 
+* **No ecossistema Symfony**, recomendamos fortemente a utilização do bundle `NelmioApiDocBundle` para gerar a documentação interativa automaticamente a partir de anotações/atributos no seu código.
+* A documentação deve ser acessível via browser (ex: `http://localhost:8000/api/doc`) quando o projeto estiver rodando.
+* Todos os endpoints, parâmetros esperados, payloads de request/response e códigos de erro (400, 401, 404, etc.) devem estar devidamente mapeados.
+
+---
+
+## 🚦 O que vamos avaliar?
+
+Ao revisar seu código, nossa equipe de engenharia olhará para os seguintes pontos:
+
+* **Design de API:** A API é verdadeiramente RESTful? Os verbos HTTP e status codes estão corretos?
+* **Organização do Código:** Separação de responsabilidades (Controllers, Services, Repositories). Uso de Design Patterns e princípios SOLID no backend.
+* **Boas práticas de Vue 3:** Uso correto de reatividade, componentização, reaproveitamento de código (Composables) e gerenciamento de estado global.
+* **Modelagem de Dados:** Estrutura das tabelas, chaves estrangeiras, índices e migrations.
+* **Documentação e Setup:** A clareza do seu README e a facilidade de rodar o projeto do zero.
+* **Segurança:** Proteção de rotas no front, validação de dados no back, senhas hasheadas e proteção contra vulnerabilidades comuns.
+* **Testes:** Presença de testes unitários ou de integração cobrindo, no mínimo, as regras de negócio mais críticas (ex: cálculo do saldo).
+
+---
+
+## 🚀 Como entregar
+
+1.  Faça um fork deste repositório (ou crie um repositório privado e nos adicione como colaboradores).
+2.  Crie um `README.md` detalhado na raiz do seu projeto contendo:
+    * Instruções claras de como configurar e rodar o projeto (Backend, Frontend e Banco de Dados).
+    * Credenciais de teste (caso não exista uma rota de seed ou registro fácil).
+    * Breve explicação sobre as decisões de arquitetura e bibliotecas escolhidas.
+3.  Quando finalizar, responda ao e-mail do nosso RH com o link do seu repositório.
+
+---
+
