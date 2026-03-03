@@ -13,9 +13,9 @@ Olá! Meu nome é **Amanda Pereira** e sou uma desenvolvedora apaixonada por cri
 
 Criei este projeto para me desafiar, sair da zona de conforto e demonstrar minhas habilidades na construção de uma aplicação de ponta a ponta, incluindo testes, documentação de API e conteinerização.
 
-* 💼 **LinkedIn:** (https://www.linkedin.com/in/amanda-pereira-dev/)
+* 💼 **LinkedIn:** https://www.linkedin.com/in/amanda-pereira-dev/
 * 📧 **E-mail:** amandapereiradevcontact@gmail.com
-* 💻 **Portfólio:** (https://pereiradev.vercel.app)
+* 💻 **Portfólio:** https://pereiradev.vercel.app
 
 ---
 
