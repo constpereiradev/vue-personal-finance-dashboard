@@ -8,11 +8,7 @@ const user = ref({
 })
 
 const getUserData = () => {
-    axios.get('api/user', {
-        headers: {
-            'Authorization': 'Bearer ' + localStorage.getItem('token')
-        }
-    }).then((response) => {
+    axios.get('api/user').then((response) => {
         user.value = response.data.user
     })
 }
