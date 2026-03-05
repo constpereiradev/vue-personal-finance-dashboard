@@ -1,62 +1,50 @@
 <script setup lang="ts">
+import GranoHeader from '@/components/GranoHeader.vue';
+import { RouterLink } from 'vue-router';
 import axios from 'axios';
-import { ref } from 'vue';
+import { onMounted } from 'vue';
 
-const email = ref('')
-const password = ref('')
+onMounted(() => {
+  login()
+})
 
 const login = () => {
   axios.post('api/auth/login', {
-    username: email.value,
-    password: password.value
-  }).then((response) => {
-    if (response.data.token) {
-      localStorage.setItem('token', response.data.token)
-    }
+    username: 'admin@example.com',
+    password: '1234'
   })
 }
 </script>
 
 <template>
-  <main>
-    <div class="row">
-      <div class="col-sm-12">
-        <form v-on:submit.prevent="login">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="row mb-3">
-                <div class="col-sm-12">
-                  <label for="email">Email</label>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <input v-model="email" type="text">
-                  </div>
-                </div>
-              </div>
+  <div class="bg-gray-900 min-h-screen text-white w-full">
 
-              <div class="row mb-3">
-                <div class="col-sm-12">
-                  <label for="password">Senha</label>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <input v-model="password" type="password">
-                  </div>
-                </div>
-              </div>
+    <GranoHeader />
 
-              <div class="row mb-3">
-                <div class="col-sm-12">
-                  <button class="btn btn-primary">Entrar</button>
-                </div>
 
-              </div>
-            </div>
-          </div>
+    <main class="max-w-4xl mx-auto text-center py-32 px-6">
 
-        </form>
+      <h1 class="text-4xl font-bold mb-6">
+        Organize suas finanças num só lugar
+      </h1>
+
+      <p class="text-gray-400 mb-10">
+        Cadastre gastos e rendimentos e tenha controle financeiro.
+      </p>
+
+      <div class="flex justify-center gap-4">
+        <RouterLink to="/register" class="text-white">
+          <button class="bg-indigo-500 px-6 py-3 rounded-md">
+            Começar
+          </button>
+        </RouterLink>
+
+        <button class="border border-gray-600 px-6 py-3 rounded-md">
+          Saber mais
+        </button>
       </div>
-    </div>
-  </main>
+
+    </main>
+
+  </div>
 </template>
