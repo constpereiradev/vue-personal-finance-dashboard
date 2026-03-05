@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios';
+
 </script>
 
 <template>
+
+  <!--
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
+      <button @click="login">cliqe aqui</button>
+
       <HelloWorld msg="You did it!" />
 
       <nav>
@@ -16,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
+  -->
 
   <RouterView />
 </template>
